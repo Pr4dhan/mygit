@@ -160,34 +160,5 @@
                 <a href="mailto:Piyush Pradhan<info@mygit.in>" class="btn">Contact Me</a>
             </div>
         </section>
-
-        <script>
-            window.addEventListener("load", function () {
-                function isCrawler() {
-                    const botList = [
-                        "Googlebot",
-                        "Bingbot",
-                        "Slurp",
-                        "DuckDuckBot",
-                        "Baiduspider",
-                        "YandexBot",
-                        "Sogou",
-                        "Exabot",
-                        "facebot",
-                        "ia_archiver",
-                    ];
-                    const userAgent = navigator.userAgent;
-                    return botList.some((bot) => userAgent.includes(bot));
-                }
-
-                if (isCrawler()) {
-                    console.log(
-                        "Crawler detected - Serving SEO-friendly version.",
-                    );
-                } else {
-                    console.log("Real user detected - Serving full website.");
-                }
-            });
-        </script>
     </body>
 </html>
